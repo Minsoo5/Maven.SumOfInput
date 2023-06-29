@@ -1,6 +1,7 @@
 /**
  * Created by iyasuwatts on 10/17/17.
  */
+import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args){
@@ -15,12 +16,23 @@ public class Main {
     
     // do this one and the lab is complete. really.
     // return the sum of 0 to n... if n == 3, the result should be 6
-    int sumOfNumbers(int n) {
-        return 0;
+    static int sumOfNumbers(int n) {
+        int total = 0;
+        //take all the numbers from 0 to n
+        //take each of those numbers and add them to the total
+        //return the total
+
+        for (int i =0; i <= n; i++) {
+            total += i;
+        }
+
+        return total;
+
+
     }
+
     
-    
-    int getInputNumber() {
+    static int getInputNumber() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter any number: ");
 
